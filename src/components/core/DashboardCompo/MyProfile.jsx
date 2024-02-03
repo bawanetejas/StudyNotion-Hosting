@@ -19,7 +19,7 @@ function MyProfile() {
     }
   return (
     <>
-        <div className='text-white flex flex-col gap-y-8 absolute pb-10 w-full'>
+        <div className='text-white flex flex-col gap-y-8 absolute z-10 pb-10 w-full'>
             <h1 className='text-[30px] font-semibold text-richblack-5'>My Profile</h1>
 
             {/* image sec */}

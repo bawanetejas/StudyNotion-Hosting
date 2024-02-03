@@ -5,19 +5,19 @@ const subSectionSchemama = new mongoose.Schema({
 
     title:{
         type:String,
-        reequired:true,
+        required:true,
     },
     timeDuration:{
         type:String,
-        reequired:true,
+        required:true,
     },
     description:{
         type:String,
-        reequired:true,
+        required:true,
     },
     videoUrl:{
         type:String,
-        reequired:true,
+        required:true,
     },
 })
 

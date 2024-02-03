@@ -29,8 +29,6 @@ function CourseDetail() {
             // console.log("response of the full course --->",res)
             setCourseDetails(res.courseDetails);
             
-           
-           
         }
 
         

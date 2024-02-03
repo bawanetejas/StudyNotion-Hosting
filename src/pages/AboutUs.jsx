@@ -93,7 +93,7 @@ function AboutUs() {
        {/* Number section */}
        <section className='  bg-richblack-700'>
         {
-            <div className='w-11/12 md:px-[120px] md:py-[80px] mx-auto max-w-maxContent flex flex-col gap-4 py-6 md:flex-row justify-between '>
+            <div className='w-11/12 md:px-[120px] md:py-[80px] mx-auto max-w-maxContent flex flex-col gap-4 py-6  md:flex-row justify-between '>
                 {
                     data.map((data,index)=>{
                 return (
