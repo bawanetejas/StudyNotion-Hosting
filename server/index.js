@@ -56,7 +56,7 @@ app.use("/api/v1/payment",paymentRoutes)
 //default routes
 
 app.get("/", (req,res)=>{
-    return json({
+    return res.json({
         success:true,
         message:"hello welcome to the default route"
     })
