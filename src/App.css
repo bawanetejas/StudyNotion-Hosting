@@ -1,0 +1,13 @@
+/* write your css here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+    overflow-x: hidden;
+}
+
+.videoShadow{
+     box-shadow: 20px 20px 0px 0px #F5F5F5;
+    
+}

@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  /* scrollbar-width: auto; */
+  scrollbar-width: 20px;
+  scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000814;
+  /* background: #12D8FA; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afb2bf;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+.videoShadow{
+    box-shadow: 20px 20px 0px 0px #F5F5F5;
+}
+
+.Blobshapebody::before {
+    content: '';
+    display: block;
+    position: absolute;
+    min-height: 100px;
+    min-width: 50px;
+    width: 100%;
+    height: 20%;
+    top: 10%;
+    margin: 0 auto;
+    filter: blur(30px);
+    z-index: -4;  
+    background-color:rgba(216, 232, 230, 0);  
+    box-shadow: 0px 00px 100px rgb(105, 184, 175);
+    /* background-size: 1600% 1600%; */
+    
+  }
+  
+
+  .bgShape1::before{
+    content: '';
+    position: absolute;
+    min-width: 50px;
+    height: 20px;
+    width: 372px;
+    height: 257px;
+    box-shadow: 0px 0px 20px blue ,0px 0px 20px orange , 0px 0px 20px whitesmoke;
+    opacity: 20%;
+    top: -1rem;
+    left: -1rem;
+    background: linear-gradient(123.77deg, #8A2BE2 -6.46%, #FFA500 59.04%, #F8F8FF 124.53%);
+    filter: blur(30px);
+   -webkit-filter: blur(30px);
+    transform: rotate(20deg);
+    
+    border-radius: 100%;
+    z-index: -4;
+  }
+
+  .bgShape2::before{
+    content: '';
+    position: absolute;
+    min-width: 50px;
+    height: 20px;
+    width: 372px;
+    height: 257px;
+    box-shadow: 0px 0px 20px blue ,0px 0px 20px orange , 0px 0px 20px whitesmoke;
+    filter: blur(30px);
+   -webkit-filter: blur(30px);
+    opacity: 20%;
+    top: -1rem;
+    left: -1rem;
+    background: linear-gradient(118.19deg, #1FA2FF -3.62%, #12D8FA 50.44%, #A6FFCB 104.51%);
+    transform: rotate(20deg);
+    border-radius: 100%;
+    z-index: -4;
+  }
+
+  .Gradients{
+    border: 2px solid;
+    background: linear-gradient(111.93deg, rgba(14, 26, 45, 0.24) -1.4%, rgba(17, 30, 50, 0.38) 104.96%),
+    linear-gradient(121.74deg, rgba(255, 255, 255, 0.22) -7.75%, rgba(255, 255, 255, 0) 37.38%);
+
+    border-image-source: linear-gradient(121.74deg, rgba(255, 255, 255, 0.22) -7.75%, rgba(255, 255, 255, 0) 37.38%);
+  }
+
+/* nest image */
+  .bgimage{
+    background-image: url('../src/assets/Images/bghome.svg');
+  }
+
+.timeline-bg::before{
+  content: "";
+  position: absolute;
+  min-width: 100px;
+  min-height: 40px;
+  width: 100%;
+  height: 40%;
+  top: 30%;
+  z-index: -4;
+  opacity: 30%;
+  background: #1FA2FF;
+  filter: blur(40px);
+  /* box-shadow: 0px 0px 10px #1FA2FF; */
+}
+
+.instructorshadow{
+  box-shadow: -20px -20px 0px 0px #FFFFFF;
+
+}
+
+/* loader */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  } 
+
+  .aboutus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    min-height: 10px;
+    min-width: 50px;
+    width: 357.43px;
+    height: 36.88px;
+    opacity: 0.74px;
+    margin: 0 auto;
+    top: -0px;
+    
+    filter: blur(50px);
+    z-index: -4;  
+    background: linear-gradient(118.41deg, #E65C00 -6.05%, #F9D423 106.11%);
+    border-radius: 100%;
+    
+  }
+
+  .foundingstory::before {
+    content: '';
+    display: block;
+    position: absolute;
+    min-height: 10px;
+    min-width: 50px;
+    width: 357.43px;
+    height: 36.88px;
+    opacity: 0.74px;
+    margin: 0 auto;
+    top: 20px;
+    
+    filter: blur(50px);
+    z-index: -4;  
+    background: linear-gradient(118.47deg, #EC008C -0.91%, #FC6767 104.91%);
+
+    border-radius: 100%;
+    
+  }
+
+  .form-style {
+    @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+  }
