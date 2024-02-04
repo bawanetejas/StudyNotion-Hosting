@@ -19,11 +19,6 @@ function InstructorDashboard() {
            
             const result = await getAllInstructorCourses(token)
 
-            if(result.length > 3){
-              console.log("hey this is the best -->",result.length)
-              result.splice(0,2)
-            }
-            console.log("result --->",result)
              setCourseCardData(result)
             setCourseData(res)
         }
