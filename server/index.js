@@ -28,7 +28,7 @@ app.use(cookieParser())
 
 app.use(
     cors({
-        origin:"https://study-notion-frontend-one-drab.vercel.app", 
+        origin:"*", 
         // origin:"http://localhost:3000",
         credentials:true,           
         optionSuccessStatus:200
