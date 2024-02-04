@@ -19,10 +19,11 @@ function InstructorDashboard() {
            
             const result = await getAllInstructorCourses(token)
 
-            // console.log("res of daata -->",result)
             if(result.length > 3){
-              result.splice(0,3)
+              console.log("hey this is the best -->",result.length)
+              result.splice(0,2)
             }
+            console.log("result --->",result)
              setCourseCardData(result)
             setCourseData(res)
         }
@@ -81,7 +82,7 @@ function InstructorDashboard() {
 
           <div className='flex md:flex-row flex-col justify-between items-center'>
             {
-              courseCardData?.map((course,index)=>{
+              courseCardData?.slice(0,3)?.map((course,index)=>{
                 return <div key={index}
                 className='flex flex-col gap-2 w-full md:w-[30%] '>
                   <img src={course.thumbNail}
