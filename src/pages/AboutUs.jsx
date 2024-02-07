@@ -7,6 +7,7 @@ import FoundingStory from '../assets/Images/FoundingStory.png'
 import LearningGrid from '../components/core/About/LearningGrid'
 import Contactus from '../components/core/About/Contactus'
 import Footer from '../components/commen/Footer'
+import ReviewModal from '../components/commen/ReviewModal'
 function AboutUs() {
 
     const data =[
@@ -112,6 +113,9 @@ function AboutUs() {
         <LearningGrid/>
         <Contactus/>
        </section>
+       <div className='w-11/12 mx-auto max-w-maxContent'>
+       <ReviewModal/>
+       </div>
        <Footer/>
     </div>
   )

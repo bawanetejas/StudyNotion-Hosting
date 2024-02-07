@@ -11,6 +11,7 @@ import LeainingLanguages from '../components/core/Homepage/LeainingLanguages'
 import InstructorSection from '../components/core/Homepage/InstructorSection'
 import Footer from '../components/commen/Footer'
 import ExploreMore from '../components/core/Homepage/ExploreMore'
+import ReviewModal from '../components/commen/ReviewModal'
 function Home() {
   return (
     <div className='w-full text-white font-Inter'>
@@ -193,8 +194,12 @@ function Home() {
      {/* section 3 */}
 
      <div className='w-full bg-richblack-900'>
-      <div className='w-maxContaint w-11/12 mx-auto'>
+      <div className='max-w-maxContent w-11/12 mx-auto'>
         <InstructorSection/>
+      </div>
+
+      <div className='max-w-maxContent w-11/12 mx-auto'>
+      <ReviewModal/>
       </div>
      </div>
      

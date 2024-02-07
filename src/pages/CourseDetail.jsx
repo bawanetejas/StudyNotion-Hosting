@@ -12,6 +12,7 @@ import toast from 'react-hot-toast';
 import Footer from '../components/commen/Footer'
 import CourseAccourdianBar from '../components/core/CourseDetailPage/CourseAccourdianBar';
 import { buyCourse } from '../servicess/operations/paymentApi';
+import ReviewModal from '../components/commen/ReviewModal';
 function CourseDetail() {
     const {courseId} = useParams();
     const {token} = useSelector((state)=>state.auth)
@@ -200,7 +201,10 @@ function CourseDetail() {
           huge experience in online training and recording videos. Let's get started!</p>
         </div>
         </div>
-      {/* Review part is remaining */}
+     
+      <div className='w-11/12 mx-auto max-w-maxContent'>
+       <ReviewModal/>
+       </div>
        <Footer/>
         {confirmationModal && <ConfirmationModal logoutModal={confirmationModal}/>}
     </>

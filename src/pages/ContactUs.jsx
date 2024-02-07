@@ -4,6 +4,7 @@ import { FaEarthAmericas } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import ConnectUs from '../components/core/About/ConnectUs';
 import Footer from '../components/commen/Footer';
+import ReviewModal from '../components/commen/ReviewModal';
 
 function ContactUs() {
   return (
@@ -46,6 +47,9 @@ function ContactUs() {
             </div>
         </div>
     </section>
+    <div className='w-11/12 mx-auto max-w-maxContent'>
+       <ReviewModal/>
+       </div>
     <Footer/>
 
     </div>

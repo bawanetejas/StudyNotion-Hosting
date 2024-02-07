@@ -127,16 +127,18 @@ exports.getAverageRating = async (req,res) =>{
 // not finding rating on the perticular course basis
 exports.getAllRating = async(req,res)=>{
     try{
-        const allReviews = await RatingAndReviews.find({})
+        let allReviews = await RatingAndReviews.find({})
                                    .sort({rating:"desc"})
                                    .populate({
-                                    path:user,
-                                    select:"firstName lastName email image",
+                                    path:"user",
+                                    select:"firstName lastName email image"
                                    })
                                    .populate({
                                     path:"course",
                                     select:"courseName"
-                                   }).exec();
+                                   }).exec()
+
+            allReviews = allReviews.filter((review)=>review.user !==null)
 
         return     res.status(200).json({
                                     success:true,
